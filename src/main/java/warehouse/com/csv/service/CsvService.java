@@ -25,6 +25,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Service;
 import org.supercsv.cellprocessor.ift.CellProcessor;
 import org.supercsv.exception.SuperCsvException;
 import org.supercsv.io.CsvBeanReader;
@@ -42,6 +43,7 @@ import warehouse.com.reststarter.exception.BadRequestRestException;
 import warehouse.com.reststarter.exception.InternalErrorException;
 
 @Slf4j
+@Service
 public class CsvService {
 
   private static final int COLUMN_OFFSET = 1;

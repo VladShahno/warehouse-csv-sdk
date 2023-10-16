@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 import org.springframework.context.MessageSource;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MessageService {
 
   private final MessageSource messageSource;
